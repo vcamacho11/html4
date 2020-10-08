@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Grid</title>
+<style>
+	img {
+		display: block;
+		width: 100%;
+	}
+	div{
+		box-shadow: 10px 10px grey
+	}
+	.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 6fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 10px
+	}
+	.grid > div {
+	background: rgba(196,170,170,1.00);
+	padding: 10px
+	}
+	.grid > div:nth-child(odd) {
+	background: rgba(168,129,129,1.00)
+	}
+	.grid-item{
+	font-size: 20px
+	}
+	.item1{
+		grid-column: 1 / span 3;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+	}
+	.item2{
+		grid-column: 1 / 3;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+	}
+	.item7{
+		grid-column: 2 / span 2;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+	}
+	</style>
+</head>
+	
+
+<body>
+	<div class="grid">
+	<div class="item1">
+		This is box one and spans over three columns
+	</div>
+	<div class="item2">
+	This is box two thst spans over two columns
+	</div>
+	<div>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ex.
+	</div>
+	<div>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minus ab molestias provident aliquam voluptatum in sapiente mollitia ullam error, nemo labore nisi officiis impedit eos tempora accusantium! Eos vitae laudantium beatae rerum! Modi ea ipsa officia hic, eveniet nam exercitationem possimus excepturi recusandae cupiditate, nulla! A debitis corporis in, voluptatibus aut, eligendi illo, ratione ut modi adipisci rem aliquam doloremque doloribus laudantium accusamus consectetur maxime vel aspernatur beatae sint nulla quibusdam molestiae. Doloribus, blanditiis!
+	</div>
+	<div>
+		<img src="images/neon-city.jpg" alt="Neon Street">
+	</div>
+	<div>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum vitae libero deserunt, voluptate fugit, nulla ea distinctio debitis magni dignissimos sequi ratione rem, quaerat fugiat voluptates. Totam consequuntur, neque excepturi distinctio dolorem voluptatibus quos iure. Consectetur sunt animi ratione velit et. Alias ratione dolorem in nisi nobis sit esse autem rem sequi quod quis unde animi ipsam facilis a amet debitis natus voluptas voluptatem veritatis, reprehenderit blanditiis! Necessitatibus suscipit aliquid recusandae ducimus blanditiis omnis iste dignissimos, quidem cupiditate velit. Atque!
+	</div>
+	<div>
+	Six
+	</div>
+	<div class="item7">
+	Seven
+	</div>
+	<div class="item1">
+	Eight
+	</div>
+	</div>
+</body>
+</html>
